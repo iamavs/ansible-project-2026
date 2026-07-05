@@ -29,3 +29,10 @@ Steps:
 cp May_2026.pem ~/.ssh/
 
 chmod 400 ~/.ssh/May_2026.pem
+
+
+
+IN ANSIBLE HOST :
+
+To set custom docker image name
+docker run -d -P anoop:v2 --name mywebsite
