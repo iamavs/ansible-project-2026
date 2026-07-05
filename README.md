@@ -20,9 +20,12 @@ ansible-playbook -i inventory/prod.yaml paybooks/start-nginx.yml
 
 
 
-To public key for different ec2 instance to ansible-tower
-add their public key 
+To Setup Connection between Ansible Tower and Ansible target host:
+Copy the public key for different ec2 instance(Ansible target host) to ansible-tower
+Then add Ansible target host public key to  ~/.ssh/ location
 
+Here May_2026.pem is the public key of Ansible target host
+Steps: 
 cp May_2026.pem ~/.ssh/
 
 chmod 400 ~/.ssh/May_2026.pem
